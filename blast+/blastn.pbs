@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#PBS -q express
+#PBS -l nodes=1:ppn=12
+#PBS -l walltime=1:00:00
+#PBS -j oe
+# before submitting you need to copy (just one time)
+# the .ncbirc file to your home directory
+# cp .ncbirc ~/.
+
+module load blast+
+cd $PBS_O_WORKDIR
+
+blastn -db nt -query seq.fasta  -out blastn_results.txt  -num_threads 12
+
