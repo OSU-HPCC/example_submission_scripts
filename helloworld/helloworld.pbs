@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# This is a comment that is just for humans to read
+# Lines starting with #PBS are instructions to the scheduler
+
+# Select the queue you want:
+#PBS -q express
+
+# Request the number of nodes and the number of
+# processors per node
+#PBS -l nodes=1:ppn=1
+  
+# Request the maximum time that your job could possibly need
+#PBS -l walltime=10:00
+
+#  This line puts all the output that would have gone to the screen
+#  into a single file.  Some schedulers do this by default.
+#PBS -j oe
+
+#  This makes sure your job starts in the same directory as
+#  where you submitted the job.
+cd $PBS_O_WORKDIR
+
+# This is the command to run a simple job 
+./helloworld.sh
+
