@@ -4,9 +4,9 @@
 #PBS -l nodes=1:ppn=12
 #PBS -l walltime=1:00:00
 #PBS -j oe
-# before submitting you need to copy (just one time)
-# the .ncbirc file to your home directory
-# cp .ncbirc ~/.
+
+# set blast database variable BLASTDB to point to latest download
+export BLASTDB=/opt/ncbi/databases
 
 module load blast+
 cd $PBS_O_WORKDIR
