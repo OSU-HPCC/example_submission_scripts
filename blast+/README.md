@@ -9,10 +9,10 @@ Blast command line options: http://www.ncbi.nlm.nih.gov/books/NBK279675/
 How to use blast on OSU HPC Center's cluster supercomputer Cowboy
 
 Outline:  
-    1. Go through New User Tutorial up to job submission: https://hpcc.okstate.edu/content/new-user-tutorial  
-    2. Submit an example Blast job: 
+A. Go through New User Tutorial up to job submission: https://hpcc.okstate.edu/content/new-user-tutorial  
+B. Submit an example Blast job: 
  
-
+Note: Do not type the dollar signs `$` those represent the prompt used in many linux terminals.
 
 After you have logged into Cowboy:
     
@@ -33,7 +33,7 @@ After you have logged into Cowboy:
 
 4.  Check:
     
-  `$ ls `
+  `$ ls `   
   `$ pwd`
 
 5. Copy the example files into your current directory
