@@ -19,7 +19,7 @@ After you have logged into Cowboy:
 
 1. Move to your scratch directory where there's plenty of room for large bio data.
 
-   $ cd /scratch/username
+   `$ cd /scratch/username`
 
    where 'username' is your username or login name 
 
@@ -33,7 +33,7 @@ After you have logged into Cowboy:
 
 4.  Check:
     
-   $ ls
+   $ ls 
    $ pwd
 
 5. Copy the example files into your current directory
