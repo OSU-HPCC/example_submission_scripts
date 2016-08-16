@@ -11,5 +11,5 @@ export BLASTDB=/opt/ncbi/databases
 module load blast+
 cd $PBS_O_WORKDIR
 
-blastn -db nt -query seq.fasta  -out blastn_results.txt  -num_threads 12
+blastn -db nt -query seq.fasta  -num_threads 12 -outfmt 6 -out blastn_results.txt
 
