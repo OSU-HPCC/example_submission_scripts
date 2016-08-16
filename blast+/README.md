@@ -40,7 +40,13 @@ After you have logged into Cowboy:
 
    `$ cp /opt/example_submission_scripts/blast+/* .`
 
-   note the space followed by a period at the end of the last command -- that means copy the files *here*
+   note the space followed by a period at the end of the last command -- that means copy the files *here*  
+   check that they really did copy:  
+   `$ ls`   
+   you should see the output:   
+   `blastn.pbs  README.md  seq.fasta`
+
+   
 
 6. OBEY:  type in the following command to submit the blast job now so that it'll finish before the end of class
 
