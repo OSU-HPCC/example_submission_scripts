@@ -17,7 +17,7 @@ Note: Do not type the dollar signs `$` those represent the prompt used in many l
 After you have logged into Cowboy:
     
 
-1. Move to your scratch directory where there's plenty of room for large bio data.
+1. OPTIONAL (this example is small enough to skip this step.) Move to your scratch directory where there's plenty of room for large bio data.
 
    `$ cd /scratch/username`
 
