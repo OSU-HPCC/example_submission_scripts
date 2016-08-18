@@ -61,6 +61,8 @@ After you have logged into Cowboy:
   or if you want to edit it:
     
    `$ nano blastn.pbs`
+   
+    See info on blast output format here: http://www.metagenomics.wiki/tools/blast/blastn-output-format-6 
 
    `$ less seq.fasta`
 
