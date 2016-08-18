@@ -80,7 +80,7 @@ After you have logged into Cowboy:
   `$ less blastn_results.txt `
 
 
-Blast has many other options... 
+10.  You can download this file `blastn_results.txt` to your laptop.  Instructions: https://hpcc.okstate.edu/content/uploading-and-downloading-files-0  
 
 
 
