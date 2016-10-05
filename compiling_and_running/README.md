@@ -1,29 +1,44 @@
-Instructions for Hello World MPI
+Instructions for compiling and running your own code by example.
 ================================
+
+
+- [Setup](#setup)
+- [Serial](#serial)
+- [OpenMP](#openmp)
+- [MPI](#mpi)
 
 Setup
 =====
-*    Make sure you are in the right place.
 
-        cd ~/SIPE/HelloWorld
+On cowboy these files are located in `/opt/example_submission_scripts/compiling_and_running`
+       
+You can copy the entire directory to your current directory and move into it like this:
+   
+    cp -r /opt/example_submission_scripts/compiling_and_running . 
+
+    cd compiling_and_running
 
 Serial
 ======
->We will begin by looking at the serial version of Hello World. This is the Hello World program written in the C language. All the program does is output `Hello World` to the screen. It runs on one single processor core of a single computer.
+We will begin by looking at the serial (also known as single core) version of Hello World. This is the Hello World program written in the C language. All the program does is output `Hello World` to the screen. It runs on one single processor core of a single computer.
 
-*    Begin by moving into the serial directory
+* Begin by moving into the serial directory
 
-        cd Serial
+        cd serial
 
-*    If you want, take a look at the code.
+* If you want, take a look at the code.
 
         cat hello_world_serial.c
 
-*    Compile the program using make
+* Compile the program using make
 
          make
 
-*    Submit the job (you can see inside the submit script by using `cat hello_world_serial.pbs`).
+* Alternatively, in case you don't use makefiles
+
+         gcc hello.c -o hello 
+
+* Submit the job (you can see inside the submit script by using `cat hello_world_serial.pbs`).
 
         qsub hello_world_serial.pbs
 
@@ -37,11 +52,11 @@ Serial
 
 OpenMP
 ======
->OpenMP allows us to write parallel software so that our program will multiple processor cores within a single computer.
+OpenMP allows us to write parallel software so that our program will multiple processor cores within a single computer.
 
-*    Move into the OpenMP directory.
+*    Move into the openMP directory.
         
-        cd OpenMP
+        cd openMP
 
 *    If you want, take a look at the code. How is it different than the code for the serial version of Hello World?
 
@@ -63,11 +78,11 @@ OpenMP
 
 MPI
 ===
->We now get to look at parallel software that uses multiple computers/compute nodes all at the same time. The software most often used for this kind of computing is called Message Passing Interface (MPI).
+We now get to look at parallel software that uses multiple computers/compute nodes all at the same time. The software most often used for this kind of computing is called Message Passing Interface (MPI).
 
 *    Move into the MPI directory.
 
-        cd MPI
+        cd mpi
     
 *    Compile the program using OpenMPI.
 
