@@ -1,19 +1,25 @@
-Instructions for Hello World MPI
+Instructions for compiling and running your own code by example.
 ================================
 
 Setup
 =====
 *    Make sure you are in the right place.
 
-        cd ~/SIPE/HelloWorld
+On cowboy these files are located in ```/opt/example_submission_scripts/compiling_and_running```
+       
+You can copy the entire directory to your current directory like this:
+   
+    cp -r /opt/example_submission_scripts/compiling_and_running . 
+
+    cd compiling_and_running
 
 Serial
 ======
->We will begin by looking at the serial version of Hello World. This is the Hello World program written in the C language. All the program does is output `Hello World` to the screen. It runs on one single processor core of a single computer.
+>We will begin by looking at the serial (also known as single core) version of Hello World. This is the Hello World program written in the C language. All the program does is output `Hello World` to the screen. It runs on one single processor core of a single computer.
 
 *    Begin by moving into the serial directory
 
-        cd Serial
+        cd serial
 
 *    If you want, take a look at the code.
 
@@ -22,6 +28,10 @@ Serial
 *    Compile the program using make
 
          make
+
+alternatively
+
+         gcc hello.c -o hello 
 
 *    Submit the job (you can see inside the submit script by using `cat hello_world_serial.pbs`).
 
@@ -39,9 +49,9 @@ OpenMP
 ======
 >OpenMP allows us to write parallel software so that our program will multiple processor cores within a single computer.
 
-*    Move into the OpenMP directory.
+*    Move into the openMP directory.
         
-        cd OpenMP
+        cd openMP
 
 *    If you want, take a look at the code. How is it different than the code for the serial version of Hello World?
 
@@ -67,7 +77,7 @@ MPI
 
 *    Move into the MPI directory.
 
-        cd MPI
+        cd mpi
     
 *    Compile the program using OpenMPI.
 
